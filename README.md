@@ -4,6 +4,8 @@ A View-Adaptive Spatial Refinement Framework for Sheep Thoracolumbar Vertebral F
 
 VERSA is a deep learning framework for classifying sheep thoracolumbar vertebral formula from radiographic images. The framework integrates multi-view radiographic inputs, heatmap-based anatomical priors, view-adaptive attention fusion, and structural feature refinement to improve the recognition of thoracic and lumbar vertebral formula patterns. It is designed for radiographic phenotyping tasks in livestock, especially for distinguishing thoracolumbar formula classes from two-view or multi-view X-ray images.
 
+![VERSA workflow](docs/figures/versa_workflow.jpg)
+
 ## Project structure
 
 ```text
