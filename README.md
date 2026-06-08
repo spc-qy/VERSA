@@ -80,16 +80,45 @@ DATA_ROOT/
 ```
 
 
-## Run
+## Usage
 
-Edit paths and parameters in:
-
-```text
-configs/config.py
-```
-
-Then run:
+Run the image-only setting:
 
 ```bash
+DATA_ROOT="/path/to/your/data" \
+FUSION_ALPHA=1.0 \
+SAVE_DIR="/path/to/save/results" \
 python train.py
 ```
+
+Run the structure-enhanced fusion setting:
+
+```bash
+DATA_ROOT="/path/to/your/data" \
+FUSION_ALPHA=0.8 \
+SAVE_DIR="/path/to/save/results" \
+python train.py
+```
+
+`FUSION_ALPHA` controls the fusion weight between image features and structural features:
+
+```text
+FUSION_ALPHA = 1.0  -> image-only path
+FUSION_ALPHA < 1.0  -> image + structural feature fusion path
+```
+
+## Output
+
+The results will be saved to `SAVE_DIR`, including:
+
+```text
+*_results.csv
+*_roc.csv
+*_prc.csv
+```
+
+These files contain nested cross-validation performance, ROC curve data, and precision-recall curve data.
+
+## Citation
+
+Citation information will be added after manuscript publication.
