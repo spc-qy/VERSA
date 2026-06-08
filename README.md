@@ -40,6 +40,50 @@ Install required packages:
 pip install -r requirements.txt
 ```
 
+## Data organization
+
+The input data directory should be organized as follows:
+
+```text
+DATA_ROOT/
+├── AB/
+│   ├── sample_001/
+│   │   ├── 1.png
+│   │   └── 2.png
+│   ├── sample_002/
+│   │   ├── 1.png
+│   │   └── 2.png
+│   └── label/
+│       └── sample_003/
+│           ├── 1.png
+│           └── 2.png
+├── BA/
+│   ├── sample_001/
+│   │   ├── 1.png
+│   │   └── 2.png
+│   ├── sample_002/
+│   │   ├── 1.png
+│   │   └── 2.png
+│   └── label/
+│       └── sample_003/
+│           ├── 1.png
+│           └── 2.png
+└── _priors/
+    ├── AB/
+    │   └── sample_001/
+    │       ├── 1_heat.png
+    │       └── 2_heat.png
+    └── BA/
+        └── sample_001/
+            ├── 1_heat.png
+            └── 2_heat.png
+```
+
+Each sample folder should contain two radiographic views named `1.png` and `2.png`.
+
+The heatmap prior files are optional when `FUSION_ALPHA=1.0`. They are used when the structure-enhanced fusion branch is enabled with `FUSION_ALPHA < 1.0`.
+
+
 ## Run
 
 Edit paths and parameters in:
