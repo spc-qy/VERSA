@@ -27,8 +27,6 @@ VERSA/
 
 ## Installation
 
-## Installation
-
 Create a conda environment:
 
 ```bash
