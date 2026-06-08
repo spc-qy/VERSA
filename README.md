@@ -25,6 +25,16 @@ VERSA/
 └── train.py
 ```
 
+## Installation
+
+Create a conda environment:
+
+```bash
+conda create -n versa python=3.10 -y
+conda activate versa
+
+Install required packages:
+pip install -r requirements.txt
 ## Run
 
 Edit paths and parameters in:
