@@ -79,10 +79,6 @@ DATA_ROOT/
             └── 2_heat.png
 ```
 
-Each sample folder should contain two radiographic views named `1.png` and `2.png`.
-
-The heatmap prior files are optional when `FUSION_ALPHA=1.0`. They are used when the structure-enhanced fusion branch is enabled with `FUSION_ALPHA < 1.0`.
-
 
 ## Run
 
