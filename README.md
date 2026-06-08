@@ -1,11 +1,11 @@
-# sheep-vertebra
+# VERSA
 
 Code for sheep thoracolumbar vertebral formula classification using radiographic images.
 
 ## Project structure
 
 ```text
-sheep-vertebra/
+VERSA/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
