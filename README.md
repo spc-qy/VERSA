@@ -1,6 +1,8 @@
 # VERSA
 
-A View-Adaptive Spatial Refinement Framework for Sheep Thoracolumbar Vertebral Formula Classification
+**A View-Adaptive Spatial Refinement Framework for Sheep Thoracolumbar Vertebral Formula Classification**
+
+**Code version: 1.0.0**
 
 VERSA is a deep learning framework for classifying sheep thoracolumbar vertebral formula from radiographic images. The framework integrates multi-view radiographic inputs, heatmap-based anatomical priors, view-adaptive attention fusion, and structural feature refinement to improve the recognition of thoracic and lumbar vertebral formula patterns. It is designed for radiographic phenotyping tasks in livestock, especially for distinguishing thoracolumbar formula classes from two-view or multi-view X-ray images.
 
@@ -11,10 +13,13 @@ VERSA is a deep learning framework for classifying sheep thoracolumbar vertebral
 ```text
 VERSA/
 ├── README.md
+├── LICENSE
 ├── requirements.txt
-├── .gitignore
 ├── configs/
 │   └── config.py
+├── docs/
+│   ├── data_dictionary.md
+│   └── figures/
 ├── src/
 │   ├── dataset.py
 │   ├── heatmap_features.py
@@ -39,6 +44,24 @@ Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
+
+## Data availability
+
+The radiographic dataset used in this study is available from:
+
+http://bioinfor.imu.edu.cn/biocloud/downloads/Thoracolumbar%20Vertebral.zip
+
+**Dataset version: 1.0**
+
+The complete study dataset contains 4,542 radiographic images from 1,205 sheep.
+
+The raw radiographic images are not hosted in this GitHub repository.
+Definitions of the vertebral formulae, classification tasks, radiographic
+views, and task-specific sample counts are provided in
+[`docs/data_dictionary.md`](docs/data_dictionary.md).
+
+The MIT License of this repository applies to the VERSA source code and does
+not apply to the radiographic dataset.
 
 ## Data organization
 
@@ -117,8 +140,18 @@ The results will be saved to `SAVE_DIR`, including:
 *_prc.csv
 ```
 
-These files contain nested cross-validation performance, ROC curve data, and precision-recall curve data.
+These files contain performance results from animal-level stratified five-fold
+cross-validation with an internal validation split, together with ROC and
+precision-recall curve data.
 
 ## Citation
 
 Citation information will be added after manuscript publication.
+
+## License
+
+The VERSA source code is released under the MIT License. See
+[`LICENSE`](LICENSE) for details.
+
+The software license does not apply to the radiographic dataset, which is
+distributed separately through the data repository described above.
