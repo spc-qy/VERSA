@@ -30,6 +30,12 @@ VERSA/
 └── train.py
 ```
 
+## Environment
+
+The reported experiments were run using Python 3.12.12.
+Package versions required for reproducibility are provided in
+[`requirements.txt`](requirements.txt).
+
 ## Installation
 
 Create a conda environment:
