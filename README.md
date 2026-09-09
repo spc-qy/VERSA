@@ -166,6 +166,13 @@ available in the [`checkpoints/`](checkpoints/) directory.
 Package versions required for reproducibility are provided in
 [`requirements.txt`](requirements.txt).
 
+## Software archive
+
+VERSA v1.0.0 is permanently archived in Zenodo.
+
+- Version: **v1.0.0**
+- DOI: **10.5281/zenodo.22671267**
+
 ## Citation
 
 Citation information will be added after manuscript publication.
