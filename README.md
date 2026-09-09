@@ -41,7 +41,7 @@ Package versions required for reproducibility are provided in
 Create a conda environment:
 
 ```bash
-conda create -n versa python=3.10 -y
+conda create -n versa python=3.12 -y
 conda activate versa
 ```
 
