@@ -15,6 +15,11 @@ VERSA/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
+├── checkpoints/
+│   └── README.md
+├── splits/
+│   ├── README.md
+│   └── two_view_AB_vs_BA_100perclass_outer_folds.csv
 ├── configs/
 │   └── config.py
 ├── docs/
