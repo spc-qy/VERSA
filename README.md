@@ -150,6 +150,17 @@ These files contain performance results from animal-level stratified five-fold
 cross-validation with an internal validation split, together with ROC and
 precision-recall curve data.
 
+## Reproducibility
+
+Exact outer-fold assignments for the balanced two-view benchmark are provided
+in the [`splits/`](splits/) directory.
+
+Information and download links for the corresponding model checkpoints are
+available in the [`checkpoints/`](checkpoints/) directory.
+
+Package versions required for reproducibility are provided in
+[`requirements.txt`](requirements.txt).
+
 ## Citation
 
 Citation information will be added after manuscript publication.
